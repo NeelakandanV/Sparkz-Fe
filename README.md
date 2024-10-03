@@ -2,7 +2,7 @@
 
 ## Login Credentials
 ### For Admin and Customer
-**Email - hari2000venkatesan@gmail.com**
+**Email - hari2000venkatesan@gmail.com**<br/>
 **Password - 12345678**
 
 
