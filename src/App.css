@@ -1,0 +1,279 @@
+/* For BaseApp & NoPage*/
+.MainParentCont{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-height: fit-content;
+    width: 100%;
+    background-color:rgb(120, 213, 218);
+    color:black;
+}
+
+.Admin_MainParentCont{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-height: fit-content;
+    width: 100%;
+    background-color:rgb(150, 143, 197);
+    color:black;
+}
+
+.GuestParentCont{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-height: fit-content;
+    width: 100%;
+    background-color:rgb(242, 242, 242);
+    color:black;
+}
+
+.TitleCont{
+    margin: 2px 2px 8px 2px;
+    padding: 1px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+.PageTitle{
+    font-size: xx-large;
+    font-weight: 500;
+    color: darkblue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.AnchorCont{
+    margin: 4px;
+    border: none;
+    padding: 3px;
+    text-align: right;
+}
+
+.AnchorCont > a{
+    border: 1px solid black;
+    background: rgb(134, 29, 215);
+    text-decoration: none;
+    padding: 8px;
+    margin: 2px;
+    border-radius: 15px;
+    color: white;
+}
+
+.AnchorCont > a:hover{
+    cursor: pointer;
+    background: rgb(4, 185, 235);
+    border-style: inset;
+    transition: all 0.3s;
+    color: black;
+}
+
+.ContentCont{
+    margin: 2px;
+    padding: 5px;
+}
+
+.Guest_ContentCont{
+    margin: 10px;
+    padding: 3px;
+}
+
+.Guest_ImageCont{
+    margin: 10px;
+    padding: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5 rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.Guest_DisplayCard{
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    height: 350px;
+    width: 280px;
+    background: white;
+    border-radius: 15px;
+    transition: all 0.5s;
+    color: black;
+}
+
+.Guest_DisplayCard > h5{
+    margin: 4px;
+    text-align: center;
+}
+
+.Guest_DisplayCard >p{
+    text-align: center;
+}
+
+.Guest_DisplayCard:hover{
+    transform: translateY(-30px);
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.Guest_DisplayCard >img{
+    height: 150px;
+    width: 200px;
+    border-radius: 15px;
+    margin-left: 30px;
+}
+
+.FooterCont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: auto;
+    border-top: 1px solid whitesmoke;
+    padding: 5px;
+    bottom: 0%;
+}
+
+.Guest_FooterCont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: auto;
+    border-top: 1px solid Black;
+    padding: 5px;
+    bottom: 0%;
+}
+
+.nav-link{
+    margin: 9px;
+    padding: 5px;
+    border: 2px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+.nav-link:hover{
+    margin: 9px;
+    padding: 5px;
+    border: 2px;
+    background-color: rgb(168, 27, 196);
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+.NoPage{
+    margin: 2px;
+    padding: 3px;
+    font-size: larger;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+}
+  
+.NoPage > img{
+    margin: 15px;
+    height: 300px;
+    width: fit-content;
+}
+
+
+/*For Auth Pages*/
+.Auth_MainParent{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    max-height: fit-content;
+    width: 100%;
+    background: url("https://www.nsbpictures.com/wp-content/uploads/2022/03/Holi-Special-Colour-Background-scaled.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+  
+.Auth_LoginCont{
+  margin: 5px;
+  border: 10px;
+  max-height: fit-content;
+  padding: 1%;
+  border-radius: 20px;
+  background: transparent;
+  backdrop-filter: blur(240px);
+}
+
+.Auth_ResetImageCont >img{
+  max-width: 40%;
+  height: 40%;
+}
+
+.Auth_FormCont{
+  padding: 5px;
+}
+
+.Auth_ImageCont img{
+    max-width: 40%;
+    height: 40%;
+}
+  
+
+/* For Mobiles and Tablets - For BaseApp*/
+@media only screen and (max-width: 720px) {
+    .Guest_DisplayCard{
+        height: fit-content;
+        width: 95%;
+    }
+    .Guest_DisplayCard:hover{
+        transform: translateX(20px);
+    }
+    .Guest_DisplayCard >img{
+        height: 200px;
+        width: 80%;
+    }
+}
+  
+
+/* For Auth Pages and No Page*/
+/* For extra small devices -small phones*/
+@media only screen and (max-width: 600px) {
+  .Auth_LoginCont{   
+      width: 95%;
+  }
+  .Guest_DisplayCard{
+    width: 270px;
+    height: 400px;
+  }
+  .Guest_DisplayCard>img{
+    width: 150px;
+    height: 120px;
+  }
+}
+/* For small devices -Large phones*/
+@media only screen and (min-width: 600px) {
+  .Auth_LoginCont{   
+      width: 90%;
+  }
+}
+/* For medium devices - Tablets*/
+@media only screen and (min-width: 768px) {
+  .Auth_LoginCont{   
+      width: 55%;
+  }
+}
+/* For Large screens - laptops/desktops */
+@media only screen and (min-width: 992px) {
+  .Auth_LoginCont{   
+    width: 65%;
+  }
+}
+/* For extra Large screens - large laptops/desktops */
+@media only screen and (min-width: 1200px) {
+  .Auth_LoginCont{   
+    width: 65%;
+  }
+}

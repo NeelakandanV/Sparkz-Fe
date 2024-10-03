@@ -1,0 +1,195 @@
+.Customer_Counts{
+    margin: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Customer_Counts >h3{
+    margin: 8px;
+    text-align: left;
+}
+
+.Customer_Counts >p{
+    margin: 15px;
+    text-align: left;
+    justify-content: center;
+}
+
+.Customer_Counts > label{
+    margin: 8px;
+    padding: 25px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: rgb(198, 123, 241);
+    transition: 0.2s;
+    text-align: center;
+}
+
+.Customer_Counts > label:hover{
+    cursor: pointer;
+    background: rgb(3, 43, 112);
+    color: white;
+}
+
+.Suggest_CustPar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 98%;
+    margin: 8px;
+    padding: 5px;
+    border: none;
+}
+
+.Suggest_ColorCard{
+    margin: 20px;
+    padding: 15px;
+    border: 2px solid black;
+    height: 560px;
+    width: 400px;
+    background: white;
+    color: black;
+    text-align: center;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+  
+.Suggest_ColorCard:hover{
+    transform: translateY(-30px);
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+  
+.Suggest_ColorCard >img{
+    height: 300px;
+    width: 360px;
+    border-radius: 15px;
+}
+  
+.Suggest_ColorCard >button{
+  margin: 6px;
+  border: 3px inset black;
+  border-radius: 18px;
+  padding: 5px;
+  width: 90%;
+  color: black;
+  background: white;
+}
+
+.Suggest_ColorCard >button:hover{
+    background: linear-gradient(to right,rgb(50, 50, 226),rgb(174, 207, 73),rgb(255, 85, 241));
+    color: whitesmoke;
+}
+
+.CustGet_MainParent{
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+  
+.CustGet_SuggestCont{
+  margin: 5px;
+  border: 2px inset black;
+  max-height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 1%;
+  border-radius: 20px;
+}
+
+.AdminAdd_FormCont >form textarea{
+    padding: 3px;
+    margin: 8px 2px 8px 2px;
+    width: 63vw;
+    height: 24vh;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: rgb(120, 213, 218);
+    color: black;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.CustomeCare_Description{
+    margin: 10px 5px;
+}
+
+.Reward_Counts{
+    margin: 4px;
+    padding: 4px;
+    text-align: left;
+}
+
+.RewardPar{
+    margin: 3px;
+    padding: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.RewardCard{
+    margin: 3px;
+    padding: 3px;
+    border-radius: 20px;
+    background: black;
+}
+
+
+.RewardCard >p{
+    margin: 1px;
+    padding: 40px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(to right,rgb(251, 1, 1),rgb(255, 0, 230),rgb(0, 0, 243));
+    background-clip: text;
+    color: transparent;
+}
+
+.RewardCard >p:hover{
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+/* For extra small devices -small phones*/
+@media only screen and (max-width: 600px){
+    .Suggest_ColorCard{
+        height: fit-content;
+        width: 280px;
+    }
+    .Suggest_ColorCard >img{
+        height: 120px;
+        width: 150px;
+    }
+    .CustGet_SuggestCont{   
+        width: 95%;
+    }
+    .AdminAdd_FormCont >form textarea{
+        width: 98%;
+        height: 30vh;
+    }
+    .RewardPar{
+        width: 98%;
+        justify-content: center;
+    }
+
+    .RewardCard{
+        margin: 1px;
+        padding: 2px;
+    }
+    .RewardCard >p{
+        padding: 20px;
+    }
+}
